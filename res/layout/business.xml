@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff5bc0de"
+    android:orientation="vertical" >
+  
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp" >
+        
+     <LinearLayout 
+		android:orientation="vertical" 
+		android:background="@drawable/card_background" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+			
+            <LinearLayout 
+				 android:gravity="center" 
+				 android:id="@+id/emailAddress" 
+				 android:layout_width="fill_parent" 
+				 android:layout_height="48.0dip" 
+				 android:layout_margin="10.0dip"
+				 android:layout_marginLeft="10.0dip" 
+				 android:layout_marginRight="10.0dip">
+              
+              <RelativeLayout 
+					android:orientation="vertical" 
+					android:layout_width="0.0dip" 
+					android:layout_height="fill_parent" 
+					android:layout_weight="80.0">
+                    <com.beardedhen.androidbootstrap.BootstrapEditText 
+						android:textSize="@dimen/textsizeNormal" 
+						android:textColor="@color/grey" 
+						android:textColorHint="@color/textColorDefault" 
+						android:gravity="left|center" 
+						android:id="@+id/user_business" 
+						android:layout_width="fill_parent" 
+						android:layout_height="fill_parent" 
+						android:layout_marginLeft="5.0dip" 
+						android:layout_marginRight="5.0dip" 
+						android:hint="Enter Your Business" 
+						android:singleLine="true" 
+						android:inputType="text" />
+                    
+                </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout 
+					android:gravity="center_horizontal" 
+					android:orientation="vertical" 
+					android:layout_width="fill_parent" 
+					android:layout_height="fill_parent">
+                <ImageView 
+					android:background="@android:color/transparent" 
+					android:layout_width="fill_parent" 
+					android:layout_height="20.0dip" />
+                <RelativeLayout 
+					android:id="@+id/signInRel" 
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content" 
+					android:layout_margin="2.0dip">
+                    <com.beardedhen.androidbootstrap.BootstrapButton 
+						android:textSize="@dimen/textsizeNormal" 
+						android:textColor="@color/white" 
+						android:id="@+id/btn_register_business" 
+						android:padding="10.0dip" 
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content" 
+						bootstrapbutton:bb_icon_left="fa-thumb-tack"
+                		bootstrapbutton:bb_type="info"
+						android:text="Submit" />
+                </RelativeLayout>
+               </LinearLayout>
+		</LinearLayout>
+</LinearLayout>
+</RelativeLayout>
